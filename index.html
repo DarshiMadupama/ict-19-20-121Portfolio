@@ -1,0 +1,364 @@
+<!DOCTYPE html>>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9baea5e246.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <?php
+    include("new.php");
+    ?>
+        <div id="header">
+            <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>WA</span>DM.</a>
+                    <ul id="sidemenu">
+                        <li><a href=index.html>Home</a></li>
+                        <li><a href=about.html>About</a></li>
+                        <li><a href=Services.html>Services</a></li>
+                        <li><a href="#PhotoGallery">PhotoGallery</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href=Testimonials.html>Testimonials</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                       
+                   
+
+            </nav>
+            <div class="header-text">
+                <p>Undergraduate Student</p>
+                <h1>Hi, I'm <span>Madupama</span><br>From Sri Lanka</h1>
+            </div>
+            
+            </div>
+        </div>
+        </div>
+<!-------------------about-------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="26.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm undergraduate student in Rajarata University of Sri Lanka.I study in Information Technology Degree in Rajarata University of Sri Lanka.I complete HRM Diploma and I have youtuber based in over 10k subscribers.I use my social media platforms to share my daily works ,experience and knowledge in hopes of making design education more accessible, and to empower others to live up to their own creative potential.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li><span>Knowledge of variety of programming languages</span><br>Include Java, Python, C, Javascript, PHP and SQL</li>
+                            <li><span>Language Skills</span><br>English</li>
+                            <li><span>Web Design</span><br>Designing the web pages</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+
+                        <ul>
+                            <li><span>2019-2021</span><br>work IT Assistant at company </li>
+                            <li><span>2016 - 2018</span><br>Prefect at school</li>
+                            <li><span>2019 - 2020</span><br>Team Leader at Society</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li><span>2018</span><br>Diploma in HRM from LIMD</li>
+                            <li><span>219</span><br>Certificate in ICT from NIBM</li>
+                            <li><span>2020</span><br>Diploma in English from SDE</li>
+                        </ul>
+                    </div>
+                    </div>
+
+
+            </div>
+        </div>
+
+        </div>
+        <section class="wrapper-main">
+            <video class="my-video" src="video.mp4" width="900"  controls muted loop poster="videoposter.png">
+            <!----
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            <source src="video.webm" type="video/webm">
+            --->
+            </video>
+            <br>
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="halfSize()">Half size</button>
+            <button onclick="normalSize()">Normal size</button>
+
+            <h5 onclick="playPause()">This plays or pauses my video!</h5>
+        </section>
+        <script>
+            let myVideo = document.querySelector(".my-video");
+            function playPause() {
+                if (myVideo.paused){
+                    myVideo.play();
+                }
+                else{
+                    myVideo.pause();
+
+                }
+               
+
+            }
+            function halfSize(){
+                myVideo.width="450";
+            }
+            function normalSize(){
+                myVideo.width="900";
+            }
+        </script>
+<!----------------services----------->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+
+            <h2>youtuber</h2>
+            <p>I use my social media platforms to share my daily works ,experience and knowledge in hopes of making design education more accessible, and to empower others to live up to their own creative potential</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Human Resources Management</h2>
+            <p>I have good communication skills , Organizational skills and I can work cooperatively with everyone</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Web Design</h2>
+            <p>I can develop some website in my knowledge.</p>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!--------------PhotoGallery-------->
+    <header>
+    <div id="PhotoGallery">
+            <h1>Photo Gallery</h1>
+            <p>My logos and My projects</p>
+    </header>
+    <main>
+            <div class="box"><img src="11.jfif"></div>
+            <div class="box"><img src="12.jfif"></div>
+            <div class="box"><img src="13.jfif"></div>
+            <div class="box"><img src="14.jfif"></div>
+            <div class="box"><img src="15.jfif"></div>
+            <div class="box"><img src="16.jfif"></div>
+            <div class="box"><img src="17.jfif"></div>
+            <div class="box"><img src="18.jfif"></div>
+            <div class="box"><img src="19.jfif"></div>
+            <div class="box"><img src="20.jfif"></div>
+            <div class="box"><img src="a.png"></div>
+            <div class="box"><img src="b.png"></div>
+            <div class="box"><img src="c.png"></div>
+            <div class="box"><img src="d.png"></div>
+            <div class="box"><img src="e.png"></div>
+            <div class="box"><img src="f.png"></div>
+            <div class="box"><img src="g.png"></div>
+    </main>
+           
+    <!-----------------portfolio------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="7.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="9.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div><div class="work">
+                <img src="10.JPG">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+
+    </div>
+
+
+    <!-------Review-->
+<div class="Testimonials">
+    <div class="inner">
+        <h1>Testimonials</h1>
+        <div class="border"></div>
+
+        <div class="row">
+            <div class="col">
+                <div class="testimonial">
+                    <img src="w1.jpg" alt="">
+                    <div class="name">Roshel</div>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <p>
+                        It is a true gem in the world of online portfolios. With its clean design and user-friendly interface, navigating through the showcased projects is a breeze. Each piece is presented with attention to detail, accompanied by stunning visuals and insightful descriptions. Whether you're a fellow creative seeking inspiration or a potential client looking for top-tier talent, this website delivers on all fronts. A must-visit for anyone passionate about art and design.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="testimonial">
+                    <img src="w3.jpg" alt="">
+                    <div class="name">Shen</div>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <p>
+                        It is a true gem in the world of online portfolios. With its clean design and user-friendly interface, navigating through the showcased projects is a breeze. Each piece is presented with attention to detail, accompanied by stunning visuals and insightful descriptions. Whether you're a fellow creative seeking inspiration or a potential client looking for top-tier talent, this website delivers on all fronts. A must-visit for anyone passionate about art and design.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="testimonial">
+                    <img src="w2.jpg" alt="">
+                    <div class="name">Neha</div>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <p>
+                        It is a true gem in the world of online portfolios. With its clean design and user-friendly interface, navigating through the showcased projects is a breeze. Each piece is presented with attention to detail, accompanied by stunning visuals and insightful descriptions. Whether you're a fellow creative seeking inspiration or a potential client looking for top-tier talent, this website delivers on all fronts. A must-visit for anyone passionate about art and design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--------------------contact------------->   
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>madupamadarshi@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0760154324</p>
+                <div class="social-icons">
+                <a href="https://facebook.com/darshimadupama.weerasinghe?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/DarshiMadupama"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/_maduu_weerasinghe_?igsh=a2N6dmc4OGV4a2M1"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/darshi-madupama-968579292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="W.A.D.M. Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+           
+                <div class="contact-right">
+                    <form>
+                        
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                      
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message" ></textarea>
+                        
+                        
+
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                    </form>
+                </div>
+        </div>  
+                </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Madupama<i class="fa-solid fa-heart"></i> by Website</p>
+    </div>
+</div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz5ad3YmHeWvqQmJCJBs2Ohi7nc8rEgaWf9XY29hD-Lsu_rZau8KERRKpLnywfBEspqdg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script src="script.js"></script>
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9baea5e246.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        
+        
+            <div class="container">
+            <nav>
+                
+                    <ul id="sidemenu">
+                        <li><a href=index.html>Home</a></li>
+                        <li><a href=about.html>About</a></li>
+                        <li><a href=Services.html>Services</a></li>
+                        <li><a href=PhotoGallery.html>PhotoGallery</a></li>
+                        <li><a href=portfolio.html>Portfolio</a></li>
+                        <li><a href=Testimonials.html>Testimonials</a></li>
+                        <li><a href=Contact.html>Contact</a></li>
+                       
+                   
+
+            </nav>
+           
+            
+          
+        </div>
+<!-------------------about-------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="26.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm undergraduate student in Rajarata University of Sri Lanka.I study in Information Technology Degree in Rajarata University of Sri Lanka.I complete HRM Diploma and I have youtuber based in over 10k subscribers.I use my social media platforms to share my daily works ,experience and knowledge in hopes of making design education more accessible, and to empower others to live up to their own creative potential.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li><span>Knowledge of variety of programming languages</span><br>Include Java, Python, C, Javascript, PHP and SQL</li>
+                            <li><span>Language Skills</span><br>English</li>
+                            <li><span>Web Design</span><br>Designing the web pages</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+
+                        <ul>
+                            <li><span>2019-2021</span><br>work IT Assistant at company </li>
+                            <li><span>2016 - 2018</span><br>Prefect at school</li>
+                            <li><span>2019 - 2020</span><br>Team Leader at Society</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li><span>2018</span><br>Diploma in HRM from LIMD</li>
+                            <li><span>219</span><br>Certificate in ICT from NIBM</li>
+                            <li><span>2020</span><br>Diploma in English from SDE</li>
+                        </ul>
+                    </div>
+                    </div>
+
+
+            </div>
+        </div>
+
+        </div>
+        <section class="wrapper-main">
+            <video class="my-video" src="video.mp4" width="900"  controls muted loop poster="videoposter.png">
+            <!----
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            <source src="video.webm" type="video/webm">
+            --->
+            </video>
+            <br>
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="halfSize()">Half size</button>
+            <button onclick="normalSize()">Normal size</button>
+
+            <h5 onclick="playPause()">This plays or pauses my video!</h5>
+        </section>
+        <script>
+            let myVideo = document.querySelector(".my-video");
+            function playPause() {
+                if (myVideo.paused){
+                    myVideo.play();
+                }
+                else{
+                    myVideo.pause();
+
+                }
+               
+
+            }
+            function halfSize(){
+                myVideo.width="450";
+            }
+            function normalSize(){
+                myVideo.width="900";
+            }
+        </script>
+
+
+
+
+
+    </body>
+</html>
